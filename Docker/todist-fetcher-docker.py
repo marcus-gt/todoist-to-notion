@@ -1,9 +1,10 @@
+# Denne virker! Men spør Notion API hver gang og det er unødvendig.
 
 from notion.client import NotionClient
 from todoist.api import TodoistAPI
 from datetime import datetime as dt
 import threading
-from utilities import Notion, fetch_project_tasks, extract_task_value
+from utilities_docker import Notion, fetch_project_tasks, extract_task_value
 
 #Initializers
 notion_tasks = Notion()

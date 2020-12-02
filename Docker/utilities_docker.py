@@ -34,7 +34,7 @@ class Notion:
                         print(f"{dt.utcnow()} – New task added from todoist. ID: " + str(new_task) + ', Content:  ' + all_todoist_tasks[i][new_task])
                         row = self.notion_query.collection.add_row()
                         row.todoist_id = str(new_task)
-                        row.name = all_todoist_tasks[i][new_task]
+                        row.task = all_todoist_tasks[i][new_task]
                         row.todoist = 'JA' 
             # Update notion tasks
             self.notion_data = self.get_notion_tasks()

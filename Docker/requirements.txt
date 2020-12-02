@@ -1,0 +1,2 @@
+todoist-python==8.1.2
+notion==0.0.27
